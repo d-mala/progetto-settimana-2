@@ -195,7 +195,7 @@ const charactersArray = ['g', 'n', 'u', 'z', 'd']
 const numbersArray = [];
 
 for (let i = 0; i < charactersArray.length; i++) {
-  switch (charactersArray[i]) {
+  switch (charactersArray[i].toLowerCase()) {
     case 'a':
       numbersArray.push(1);
       break;
@@ -258,6 +258,9 @@ for (let i = 0; i < charactersArray.length; i++) {
       break;
     case 'z':
       numbersArray.push(21);
+      break;
+    default:
+      numbersArray.push(0);
       break;
   }
 }
